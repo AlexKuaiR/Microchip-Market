@@ -1,0 +1,23 @@
+---
+title: "Source A"
+description: |
+  Detailed notes for Source A
+author:
+  - name: Alex Kuai 
+date: "`r Sys.Date()`"
+output: distill::distill_article
+bibiolography: bibliography.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Distill is a publication format for scientific and technical writing, native to the web. 
+
+Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>.
+
+
+
+
+

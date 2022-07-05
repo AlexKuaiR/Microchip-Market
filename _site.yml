@@ -1,0 +1,16 @@
+name: "."
+title: "Microchip Market"
+description: |
+  Microchip Market
+output_dir: "docs"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - text: "Sources"
+      menu:
+      - text: "Source A"
+        href: source_A.html
+output: distill::distill_article
