@@ -17,25 +17,5 @@ library(readxl)
 library(plotly)
 ```
 
-
-```{r demand_plot}
-market_data <- read_rds("rawdata.rds")
-market_graph <- market_data |> 
-  ggplot(aes(x = year, y = Total_Year, fill = Regions, color = Regions,
-             text = paste("Year:", year, "\n", 
-                          "Demand:", Total_Year, "m"))) +
-  geom_point(alpha = .5) +
-  facet_wrap(~Regions) +
-  theme_classic() +
-  theme(legend.position = "none") +
-  labs(title = "Semiconductor Demand 1986 to 2021",
-       x = "Year",
-       y = "Total Semiconductor Demand (millions)")
-ggplotly(market_graph, tooltip = "text")
-```
-[@Billings_Report]
-
-There is a massive increase in in the Asia Pacific Region, peaking at almost 343 million semiconductor units reported to be purchased. 
-The semiconductor demand in the Americas have steadily increased, but nowhere near the growth of the Asia Pacific region. 
-
-
+### Introduction
+How many of you have wondered what exactly is in your computer? Based on this article's title, you've probably guessed already. Semiconductors. These little chips in your phones and computers are the center for their core operations as well as advanced capabilities. 

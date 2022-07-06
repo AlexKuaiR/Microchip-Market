@@ -1,0 +1,73 @@
+---
+title: "Semiconductor Demand"
+description: |
+  Semiconductor demand in the past 35 years.
+author:
+  - name: Alex Kuai
+date: "`r Sys.Date()`"
+output: distill::distill_article
+bibliography: bibliography.bib
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(knitr)
+library(tidyverse)
+library(janitor)
+library(httr)
+library(rvest)
+library(readxl)
+library(plotly)
+market_data <- read_rds("rawdata.rds")
+```
+
+### Raw Data
+This is the raw data from the original xls file downloaded from the website. 
+
+```{r raw data display}
+read_xls(path = "WSTS-Historical-Billings-Report-April2022data.xls") |>
+  as_tibble()
+  # try to find out how to display this as a clean dataset with pages and everything
+```
+Looking at this, it isn't pretty. The years are in the same column as the countries, column names are all messed up do to how this was formatted; so then it was time to wrangle it into place. 
+
+### Wrangling
+Scanning through the data, it was clear that we needed to first change the names of these columns, because they were all messed up.
+
+Furthermore, the countries column has the years in it. That isn't right. So we need a new column to hold the years, then delete all of the ones from where they aren't supposed to be. 
+
+After polishing this dataset into something usable, here it is!
+
+```{r finished_data_display}
+read_rds("rawdata.rds")
+```
+
+
+### Semiconductor Demand From Four Regions
+Historical billings of semiconductor demand from the Americas, the Asia Pacific, Europe, and Japan are shown here. 
+
+```{r demand_plot}
+market_graph <- market_data |> 
+  ggplot(aes(x = year, y = Total_Year, fill = Regions, color = Regions,
+             text = paste("Year:", year, "\n", 
+                          "Demand:", Total_Year, "m"))) +
+  geom_point(alpha = .5) +
+  facet_wrap(~Regions) +
+  theme_classic() +
+  theme(legend.position = "none") +
+  labs(title = "Semiconductor Demand 1986 to 2021",
+       x = "Year",
+       y = "Total Semiconductor Demand (millions)")
+ggplotly(market_graph, tooltip = "text")
+```
+[@Billings_Report]
+
+There is a massive increase in in the Asia Pacific Region, peaking at almost 343 million semiconductor units reported to be purchased. 
+
+The semiconductor demand in the Americas have steadily increased, but nowhere near the growth of the Asia Pacific region. 
+
+Demand for semiconductors in Europe and Japan have been relatively low, and there haven't been any particularly high amounts of growth demand for them either. 
+
+
+
+
+

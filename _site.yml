@@ -13,4 +13,8 @@ navbar:
       menu:
       - text: "Source A"
         href: source_A.html
+    - text: "Topics"
+      menu:
+      - text: "Semiconductor Demand"
+        href: demand.html
 output: distill::distill_article
