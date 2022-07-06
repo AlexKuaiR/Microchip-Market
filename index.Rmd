@@ -3,6 +3,7 @@ title: "Microchip Market"
 description: |
   Welcome to the website. I hope you enjoy it!
 site: distill::distill_website
+bibliography: bibliography.bib
 ---
 
 ```{r setup, include=FALSE}
@@ -17,20 +18,24 @@ library(plotly)
 ```
 
 
-```{r}
+```{r demand_plot}
 market_data <- read_rds("rawdata.rds")
 market_graph <- market_data |> 
-  ggplot(aes(x = year, y = Total_Year, fill = x, color = x,
+  ggplot(aes(x = year, y = Total_Year, fill = Regions, color = Regions,
              text = paste("Year:", year, "\n", 
-                          "Demand:", Total_Year))) +
+                          "Demand:", Total_Year, "m"))) +
   geom_point(alpha = .5) +
-  facet_wrap(~x) +
+  facet_wrap(~Regions) +
   theme_classic() +
   theme(legend.position = "none") +
   labs(title = "Semiconductor Demand 1986 to 2021",
-       subtitle = "The Asia Pacific region has the highest growth in demand\nand also has highest total demand",
        x = "Year",
-       y = "Total Semiconductor Demand (millions)",
-       caption = "World Semiconductor Trade Statistics (WSTS)")
+       y = "Total Semiconductor Demand (millions)")
 ggplotly(market_graph, tooltip = "text")
 ```
+[@Billings_Report]
+
+There is a massive increase in in the Asia Pacific Region, peaking at almost 343 million semiconductor units reported to be purchased. 
+The semiconductor demand in the Americas have steadily increased, but nowhere near the growth of the Asia Pacific region. 
+
+

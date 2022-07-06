@@ -6,15 +6,15 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2022-07-04T15:31:27-04:00"
+      "last_modified": "2022-07-05T21:19:13-04:00"
     },
     {
       "path": "index.html",
       "title": "Microchip Market",
       "description": "Welcome to the website. I hope you enjoy it!\n",
       "author": [],
-      "contents": "\n\n\n\n\n\n\n",
-      "last_modified": "2022-07-04T15:31:29-04:00"
+      "contents": "\n\n\n\n(WSTS\n1986)\nThere is a massive increase in in the Asia Pacific Region, peaking at\nalmost 343 million semiconductor units reported to be purchased. The\nsemiconductor demand in the Americas have steadily increased, but\nnowhere near the growth of the Asia Pacific region.\n\n\n\nWSTS. 1986. World Semiconductor Trade Statistics Historical Billigns\nReport. WSTS. https://www.wsts.org/67/Historical-Billings-Report.\n\n\n\n\n",
+      "last_modified": "2022-07-05T21:19:15-04:00"
     },
     {
       "path": "source_A.html",
@@ -28,7 +28,7 @@
       ],
       "date": "`r Sys.Date()`",
       "contents": "\nDistill is a publication format for scientific and technical writing,\nnative to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\n\n\n\n",
-      "last_modified": "2022-07-04T15:31:30-04:00"
+      "last_modified": "2022-07-05T21:19:16-04:00"
     }
   ],
   "collections": []
