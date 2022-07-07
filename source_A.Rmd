@@ -1,5 +1,5 @@
 ---
-title: "Source A"
+title: "Historical Microchip Billings"
 description: |
   Detailed notes for Source A
 author:
@@ -13,11 +13,5 @@ bibiolography: bibliography.bib
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web. 
-
-Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>.
-
-
-
-
-
+Source B was the historical microchip billings from the World Semiconductor Trade Statistics. 
+[@Billings_Report]

@@ -31,6 +31,7 @@ growth_data <-wrangled_data |>
          US = as.integer(US)) |> 
   pivot_longer(names_to = "region",
                values_to = "population",
-               cols = -year)
+               cols = -year) +
+  mutate(population = population / 1000000)
 #growth_data
 write_rds(growth_data, "growth.rds")

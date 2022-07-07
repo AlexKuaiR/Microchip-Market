@@ -1,0 +1,19 @@
+---
+title: "Summary"
+description: |
+  This is a summary of the findings in this project.
+author:
+  - name: Alex Kuai
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+### Description
+I compared four regions' microchip demand and their respective populations. The Asia Pacific's semiconductor demand and initial population growth was unmatched by any of the other four regions that I focused on; however as we approach modern day, the Asia Pacific's population line begins to flatten out. This is not unwarranted; it can be represented by a phenomena that describes how birth rates per year in more developed countries are lower than in developing ones. One part of the reason that the Asia Pacific region appears to be nearing the end of this phenomena could be due to it's dramatic growth in semiconductor demand relative to the other regions, catapulting it's economic and technological status. 
+
+
+

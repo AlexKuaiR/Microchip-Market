@@ -1,0 +1,22 @@
+---
+title: "The World Bank"
+description: |
+  Detailed notes for Source B.
+author:
+  - name: Alex Kuai
+date: "`r Sys.Date()`"
+output: distill::distill_article
+bibliography: bibliography.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Source A was the total population data from the World Bank. 
+[@Billings_Report]
+
+
+
+
+

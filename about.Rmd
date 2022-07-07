@@ -8,3 +8,14 @@ description: |
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+### Greetings
+My name is Alex Kuai, and I am a freshman to be at Newton North High School. After exhausting many different project ideas found on the internet, I finally landed on one that I think would be suitable for me. Semiconductors.
+
+### About the Project
+This project is about microchips and it's effect on a country's population..
+
+"This is Data Science"
+~ Preceptor
+
+[Kane's Free High School Data Science
+Bootcamp](https://bootcamp.davidkane.info)
