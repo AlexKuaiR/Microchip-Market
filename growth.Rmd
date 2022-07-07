@@ -25,7 +25,7 @@ The raw data for this graph is here.
 read_xls("API_SP.POP.TOTL_DS2_en_excel_v2_4250716.xls")
 ```
 
-This dataset required extensive care to polish into something usable, but here is the end product.
+Here is the polished version and the end product it created. 
 
 ```{r data_plotting}
 plot_data
@@ -43,6 +43,6 @@ plot_data |>
 [@Population_Report]
 
 ### Conclusion
-We can see that in this graph, just like the semiconductor demand graph, had the Asia Pacific Region leading in population growth, and the other countries trailing behind, and perhaps this is because of improved living conditions due to an influx of microchips. However, studies have shown that more developed countries typically have a lower birth rate than developing countries, and the flattening out of the population curve for the Asia Pacific Region may be because of said improved living conditions. 
+We can see that in this graph, just like the semiconductor demand graph, had the Asia Pacific Region leading in population growth, and the other countries trailing behind, and perhaps this is because of improved living conditions due to an influx of microchips.
 
 

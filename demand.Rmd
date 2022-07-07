@@ -61,7 +61,7 @@ ggplotly(market_graph, tooltip = "text")
 ```
 [@Billings_Report]
 
-There is a massive increase in in the Asia Pacific Region, peaking at almost 343 million semiconductor units reported to be purchased. 
+There is massive growth in semiconductor demand in the Asia Pacific Region, peaking at almost 343 million semiconductor units reported to be purchased. 
 
 The semiconductor demand in the Americas have steadily increased, but nowhere near the growth of the Asia Pacific region. 
 
