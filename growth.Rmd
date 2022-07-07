@@ -15,37 +15,14 @@ library(rvest)
 library(janitor)
 library(tidyverse)
 library(readxl)
-raw_data <- read_xls(path = "GDP_Growth.xls")
+plot_data <- read_rds("growth.rds")
 ```
 
 ```{r data_wrangling}
-trim_data <- raw_data |> 
-  row_to_names(row_number = 3) |> 
-  clean_names() |> 
-  as_tibble() |> 
-  filter(country_name == "East Asia & Pacific" |
-         country_name == "United States" |
-         country_name == "European Union" |
-         country_name == "Japan")
-  #mutate(total_year = x1960 : x2021)
-trim_data
-#wrangled_data <- data.frame(t(trim_data[-1])) |> 
- # as_tibble()
-
-
-#colnames(wrangled_data) <- c("Asia_Pacific", "European_Union", "Japan", "US")
-#wrangled_data |> 
-# drop_na() |> 
-# filter(Asia_Pacific != "EAS" & Asia_Pacific != "GDP growth (annual %)" & #Asia_Pacific != "NY.GDP.MKTP.KD.ZG") |> 
-#  filter(European_Union != "EAS" & European_Union != "GDP growth (annual %)" #& European_Union != "NY.GDP.MKTP.KD.ZG") |> 
-# filter(Japan != "EAS" & Japan != "GDP growth (annual %)" & Japan != #"NY.GDP.MKTP.KD.ZG") |> 
-#  filter(US != "EAS" & US != "GDP growth (annual %)" & US != #"NY.GDP.MKTP.KD.ZG") |> 
-#  mutate(year = 1971 : 2021) |> 
-#  mutate(Asia_Pacific = as.integer(Asia_Pacific),
-#        European_Union = as.integer(European_Union),
-#         Japan = as.integer(Japan),
-#         US = as.integer(US)) 
-```
+plot_data |> 
+  ggplot(aes(x = year, y = GDP, fill = region)) +
+  geom_point(alpha = 0.5) +
+  facet_wrap(~region) 
 
 
 

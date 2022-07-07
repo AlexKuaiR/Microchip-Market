@@ -17,4 +17,6 @@ navbar:
       menu:
       - text: "Semiconductor Demand"
         href: demand.html
+      - text: "GDP Growth"
+        href: growth.html
 output: distill::distill_article
