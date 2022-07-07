@@ -18,14 +18,24 @@ library(readxl)
 plot_data <- read_rds("growth.rds")
 ```
 
-```{r data_wrangling}
+### Raw Data
+The raw data for this graph is here.
+
+```{r}
+read_xls("API_SP.POP.TOTL_DS2_en_excel_v2_4250716.xls")
+```
+
+This dataset required extensive care to polish into something usable, but here is the end product.
+
+```{r data_plotting}
+plot_data
 plot_data |> 
-  ggplot(aes(x = year, y = GDP, fill = region)) +
+  ggplot(aes(x = year, y = population, fill = region, color = region)) +
   geom_point(alpha = 0.5) +
-  facet_wrap(~region) 
+  facet_wrap(~region)
+```
 
-
-
-
+### Conclusion
+We can see that in this graph, just like the semiconductor demand graph, had the Asia Pacific Region leading in population growth, and the other countries trailing behind, and perhaps this is because of improved living conditions due to an influx of microchips. However, studies have shown that more developed countries typically have a lower birth rate than developing countries, and the flattening out of the population curve for the Asia Pacific Region may be because of said improved living conditions. 
 
 
