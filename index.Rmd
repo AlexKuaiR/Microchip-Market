@@ -3,7 +3,6 @@ title: "Microchip Market"
 description: |
   Welcome to the website. I hope you enjoy it!
 site: distill::distill_website
-bibliography: bibliography.bib
 ---
 
 ```{r setup, include=FALSE}
@@ -18,4 +17,4 @@ library(plotly)
 ```
 
 ### Introduction
-How many of you have wondered what exactly is in your computer? Based on this article's title, you've probably guessed already. Semiconductors. These little chips in your phones and computers are the center for their core operations as well as advanced capabilities. 
+How many of you have wondered what exactly is in your computer? Based on this article's title, you've probably guessed already. Semiconductors. These little chips in your phones and computers are the center for their core operations as well as advanced capabilities. Lets see the difference in population between countries to compare what effect microchips may have on it. 
