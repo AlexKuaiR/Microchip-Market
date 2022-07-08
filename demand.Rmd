@@ -17,6 +17,8 @@ library(httr)
 library(rvest)
 library(readxl)
 library(plotly)
+library(DT)
+library(rmarkdown)
 market_data <- read_rds("rawdata.rds")
 ```
 
@@ -24,8 +26,8 @@ market_data <- read_rds("rawdata.rds")
 This is the raw data from the original xls file downloaded from the website. 
 
 ```{r raw data display}
-read_xls(path = "WSTS-Historical-Billings-Report-April2022data.xls") |>
-  as_tibble()
+raw_data <- read_xls("API_NY.GDP.PCAP.CD_DS2_en_excel_v2_4250700.xls")
+paged_table(raw_data)
   # try to find out how to display this as a clean dataset with pages and everything
 ```
 Looking at this, it isn't pretty. The years are in the same column as the countries, column names are all messed up do to how this was formatted; so then it was time to wrangle it into place. 

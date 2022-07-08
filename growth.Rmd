@@ -15,6 +15,7 @@ library(rvest)
 library(janitor)
 library(tidyverse)
 library(readxl)
+library(rmarkdown)
 plot_data <- read_rds("growth.rds")
 ```
 
@@ -22,13 +23,13 @@ plot_data <- read_rds("growth.rds")
 The raw data for this graph is here.
 
 ```{r}
-read_xls("API_SP.POP.TOTL_DS2_en_excel_v2_4250716.xls")
+paged_table(read_xls("API_SP.POP.TOTL_DS2_en_excel_v2_4250716.xls"))
 ```
 
 Here is the polished version and the end product it created. 
 
 ```{r data_plotting}
-plot_data
+paged_table(plot_data)
 plot_data |> 
   ggplot(aes(x = year, y = population, fill = region, color = region)) +
   geom_point(alpha = 0.5) +
