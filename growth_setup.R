@@ -31,7 +31,7 @@ growth_data <-wrangled_data |>
          US = as.integer(US)) |> 
   pivot_longer(names_to = "region",
                values_to = "population",
-               cols = -year) |> 
+               cols = -year)
   #mutate(country = rep(c("Asia Pacific", "European Union", "Japan", "US"), by = ))
 growth_data
 write_rds(growth_data, "growth.rds")

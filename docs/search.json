@@ -6,7 +6,7 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\nGreetings\nMy name is Alex Kuai, and I am a freshman to be at Newton North High\nSchool. After exhausting many different project ideas found on the\ninternet, I finally landed on one that I think would be suitable for me.\nSemiconductors.\nAbout the Project\nThis project is about microchips and it’s effect on a country’s\npopulation..\n“This is Data Science”\n\nPreceptor\n\nKane’s Free High School\nData Science Bootcamp\n\n\n\n",
-      "last_modified": "2022-08-07T15:38:31-04:00"
+      "last_modified": "2022-08-07T15:42:39-04:00"
     },
     {
       "path": "demand.html",
@@ -20,7 +20,7 @@
       ],
       "date": "`r Sys.Date()`",
       "contents": "\nRaw Data\nThis is the raw data from the original xls file downloaded from the\nwebsite.\n\n\n\n\nLooking at this, it isn’t pretty. The years are in the same column as\nthe countries, column names are all messed up do to how this was\nformatted; so then it was time to wrangle it into place.\nWrangling\nScanning through the data, it was clear that we needed to first\nchange the names of these columns, because they were all messed up.\nFurthermore, the countries column has the years in it. That isn’t\nright. So we need a new column to hold the years, then delete all of the\nones from where they aren’t supposed to be.\nAfter polishing this dataset into something usable, here it is!\n\n\n\n\nSemiconductor Demand\nFrom Four Regions\nHistorical billings of semiconductor demand from the Americas, the\nAsia Pacific, Europe, and Japan are shown here.\n\n\n\n(WSTS\n2022)\nThere is massive growth in semiconductor demand in the Asia Pacific\nRegion, peaking at almost 343 million semiconductor units reported to be\npurchased.\nThe semiconductor demand in the Americas have steadily increased, but\nnowhere near the growth of the Asia Pacific region.\nDemand for semiconductors in Europe and Japan have been relatively\nlow, and there haven’t been any particularly high amounts of growth\ndemand for them either.\n\n\n\nWSTS. 2022. World Semiconductor Trade Statistics Historical Billigns\nReport. WSTS. https://www.wsts.org/67/Historical-Billings-Report.\n\n\n\n\n",
-      "last_modified": "2022-08-07T15:38:35-04:00"
+      "last_modified": "2022-08-07T15:42:43-04:00"
     },
     {
       "path": "growth.html",
@@ -34,7 +34,7 @@
       ],
       "date": "`r Sys.Date()`",
       "contents": "\nRaw Data\nThe raw data for this graph is here.\n\n\n\n\nHere is the polished version and the end product it created.\n\n\n\n\n\n(Bank\n2022)\nConclusion\nWe can see that in this graph, just like the semiconductor demand\ngraph, had the Asia Pacific Region leading in population growth, and the\nother countries trailing behind, and perhaps this is because of improved\nliving conditions due to an influx of microchips.\n\n\n\nBank, World. 2022. Population, Total. World Bank. https://data.worldbank.org/indicator/SP.POP.TOTL.\n\n\n\n\n",
-      "last_modified": "2022-08-07T15:38:39-04:00"
+      "last_modified": "2022-08-07T15:42:47-04:00"
     },
     {
       "path": "index.html",
@@ -42,7 +42,7 @@
       "description": "Welcome to the website. I hope you enjoy it!\n",
       "author": [],
       "contents": "\nIntroduction\nHow many of you have wondered what exactly is in your computer? Based\non this article’s title, you’ve probably guessed already.\nSemiconductors. These little chips in your phones and computers are the\ncenter for their core operations as well as advanced capabilities. Lets\nsee the difference in population between countries to compare what\neffect microchips may have on it.\nTabs in the top right\n\n\n\n",
-      "last_modified": "2022-08-07T15:38:40-04:00"
+      "last_modified": "2022-08-07T15:42:48-04:00"
     },
     {
       "path": "source_A.html",
@@ -56,7 +56,7 @@
       ],
       "date": "`r Sys.Date()`",
       "contents": "\nSource B was the historical microchip billings from the World\nSemiconductor Trade Statistics. [@Billings_Report]\n\n\n\n",
-      "last_modified": "2022-08-07T15:38:40-04:00"
+      "last_modified": "2022-08-07T15:42:48-04:00"
     },
     {
       "path": "source_B.html",
@@ -70,7 +70,7 @@
       ],
       "date": "`r Sys.Date()`",
       "contents": "\nSource A was the total population data from the World Bank. (WSTS\n2022)\n\n\n\nWSTS. 2022. World Semiconductor Trade Statistics Historical Billigns\nReport. WSTS. https://www.wsts.org/67/Historical-Billings-Report.\n\n\n\n\n",
-      "last_modified": "2022-08-07T15:38:41-04:00"
+      "last_modified": "2022-08-07T15:42:49-04:00"
     },
     {
       "path": "TLDR.html",
@@ -84,7 +84,7 @@
       ],
       "date": "`r Sys.Date()`",
       "contents": "\nDescription\nI compared four regions’ microchip demand and their respective\npopulations. The Asia Pacific’s semiconductor demand and initial\npopulation growth was unmatched by any of the other four regions that I\nfocused on; however as we approach modern day, the Asia Pacific’s\npopulation line begins to flatten out. This is not unwarranted; it can\nbe represented by a phenomena that describes how birth rates per year in\nmore developed countries are lower than in developing ones. One part of\nthe reason that the Asia Pacific region appears to be nearing the end of\nthis phenomena could be due to it’s dramatic growth in semiconductor\ndemand relative to the other regions, catapulting it’s economic and\ntechnological status.\n\n\n\n",
-      "last_modified": "2022-08-07T15:38:42-04:00"
+      "last_modified": "2022-08-07T15:42:50-04:00"
     }
   ],
   "collections": []
