@@ -40,7 +40,7 @@ Furthermore, the countries column has the years in it. That isn't right. So we n
 After polishing this dataset into something usable, here it is!
 
 ```{r finished_data_display}
-read_rds("rawdata.rds")
+paged_table(market_data)
 ```
 
 

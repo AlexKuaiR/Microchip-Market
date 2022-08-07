@@ -33,7 +33,7 @@ paged_table(plot_data)
 plot_data |> 
   ggplot(aes(x = year, y = population, fill = region, color = region)) +
   geom_point(alpha = 0.5) +
-  facet_wrap(~region) +
+  facet_wrap(~region) + 
   labs(title = "Population of Four Regions",
        subtitle = "The Asia Pacific region has the highest population growth",
        x = "Year",
